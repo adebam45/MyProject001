@@ -1,17 +1,17 @@
 # String Error
-print('Hello, world!)
+print('Hello, world!) # String was not closed by "'"
       
 # Indentation Error
 if True:
-print('Ahoy, matey!')
+print('Ahoy, matey!')  # Put 4 four spaces before the print
       
 # Syntax Error
-if True
+if True # ":" is missing
     print('Greetings, Earthlings!')
 
 # Logic Error
 animal = 'Lion'
-if animal == 'Lino':
+if animal == 'Lino':# Put "Lion" instead of "Lino"
     print('Meat')
 elif animal == 'Zebra':
     print('Grass')
