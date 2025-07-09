@@ -17,7 +17,7 @@ def get_soup(url):
     return BeautifulSoup(response.content, 'html.parser')
 
 # Create folder called 'book_image' to save images
-image_folder = 'book_images'
+image_folder = 'mystery_book_images'
 os.makedirs(image_folder, exist_ok=True)
 
 
@@ -55,7 +55,8 @@ def scrape_book_details(book_url, base_url):
         if img and img.get('src'):
             image_url = urljoin(book_url, img['src'])
             image_filename = os.path.basename(image_url)
-            image_path = os.path.join(image_folder, image_filename)
+            image_path = os.path.join(image_folder,  image_filename)
+            os.makedirs(os.path.join(image_folder), exist_ok=True)
 
             try:
                 wget.download(image_url, out=image_path)
