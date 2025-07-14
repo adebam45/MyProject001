@@ -71,8 +71,8 @@ This repository documents **three web scraping scripts** developed to extract bo
 1. **Clone the repository**
 
 ```
-git clone https://github.com/your-username/book-scraper.git
-cd book-scraper
+git https://github.com/adebam45/MyProject001
+
 ```
 
 2. **Install required packages**
